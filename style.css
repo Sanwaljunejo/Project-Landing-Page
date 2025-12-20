@@ -9,6 +9,7 @@ body{
     font-family: 'Arial',sans-serif;
     background-color: #1e1e1e;
     color: #fff;
+    overflow-x: hidden;
 }
 
 /* Header  */
@@ -19,7 +20,7 @@ body{
     top: 0;
     width: 100%;
     background: rgba(30, 30, 30, 0.95);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(100);
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -48,6 +49,7 @@ body{
 
 
 .navbar-right .nav-links a {
+    
     position: relative;
     font-size: 15px;
     font-weight: 500;
@@ -59,7 +61,7 @@ body{
 }
 
 .navbar-right .nav-links a:hover {
-    color: white;
+    color: gray;
 }
 
 .navbar-right .nav-links a::after {
@@ -76,7 +78,7 @@ body{
 .navbar-right .nav-links a:hover::after {
     width: 100%;
 }
-/* HAMBURGER ICON */
+
 .hamburger {
     display: none;
     font-size: 26px;
@@ -85,44 +87,9 @@ body{
     user-select: none;
 }
 
-/* Hide checkbox */
+
 #menu-toggle {
     display: none;
-}
-
-/* =======================
-   MOBILE NAV (768px)
-======================= */
-@media (max-width: 768px) {
-
-    .hamburger {
-        display: block;
-    }
-
-    .navbar-right {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(30, 30, 30, 0.98);
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.70s ease;
-    }
-
-    .navbar-right .nav-links {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 28px;
-        text-align: center;
-    
-    }
-
-    
-    #menu-toggle:checked ~ .navbar-right {
-        max-height: 300px;
-    }
 }
 
 
@@ -505,8 +472,36 @@ footer {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-right {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 30, 30, 0.98);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.70s ease;
+    }
+
+    .navbar-right .nav-links {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 28px;
+        text-align: center;
+    
+    }
+
+    
+    #menu-toggle:checked ~ .navbar-right {
+        max-height: 300px;
+    }
 
 
     .header-text h1{
@@ -514,19 +509,24 @@ footer {
     }
     .main-container{
         flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    
 
     }
 
     .main-container img{
-        margin-right: 200px;
-        margin-top: -78px;
-        width: 350px;
+        
+        margin: 0 auto;
+        display: block;
+        width: 260px;
     }
 
     .tech-strip {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1.8rem;
+        overflow-x: hidden;
     }
 
     .service-items{
