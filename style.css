@@ -114,9 +114,7 @@ body{
 
 
 .my-img{
-    border-radius: 50%;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
-    transition: transform 0.4s ease;
+    
     margin-left: 150px;
     width: 400px;
     height: auto;
@@ -224,16 +222,18 @@ text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em black;
 
 
 /* Services  Section  */
-.services{
+#services{
     background-color: #252525;
     padding: 10px 10px;
     text-align: center;
     border-bottom: 2px solid black;
 }
 
-.services h2{
+.container h2{
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 2em;
+    text-align: center;
 
 }
 
@@ -252,6 +252,7 @@ box-shadow: 1px 0px 3px 1px white;
 .service-item h3{
     font-size: 1.2rem;
     color: #FF7043;
+    text-align: center;
 }
 
 /* Project Section  */
@@ -371,19 +372,21 @@ box-shadow: 1px 0px 3px 1px white;
 .info-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    
 }
 
 .info-item i {
     font-size: 1.2rem;
     margin-right: 15px;
-    width: 25px; 
+    width: 10px; 
     text-align: center;
 }
 
-.info-item p {
-    margin: 0;
+.info-item a{
+    margin-top: 0px;
     font-size: 1rem;
+    color: white;
+    text-decoration: none;
 }
 
 /* Right side - Contact Form */
