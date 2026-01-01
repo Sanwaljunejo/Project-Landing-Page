@@ -412,7 +412,7 @@ box-shadow: 1px 0px 3px 1px white;
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #776f6f;
+    border: 1px solid #0056b3;
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
@@ -421,8 +421,8 @@ box-shadow: 1px 0px 3px 1px white;
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #007BFF;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    border-color:  #007BFF;
+    box-shadow: 0 0 8px  #007BFF;
 }
 
 textarea {
@@ -490,7 +490,7 @@ footer {
         border-bottom: 1px solid rgba(255,255,255,0.08);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.70s ease;
+        transition: max-height 0.50s ease;
     }
 
     .navbar-right .nav-links {
@@ -514,7 +514,7 @@ footer {
         flex-direction: column;
         padding: 30px 20px;
         text-align: center;
-    
+
 
     }
 
